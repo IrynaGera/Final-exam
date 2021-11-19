@@ -1,0 +1,22 @@
+@import '../../styles/main.scss';
+
+.btn-holder {
+    text-align: center;
+}
+
+.btn {
+    padding: 15px 35px;
+    color: $light-grey;
+    font-family: $ptsans;
+    font-size: 20px;
+    font-style: italic;
+    background-color: inherit;
+    cursor: pointer;
+    border: 1px solid;
+
+    &:hover {
+        transform: scale(1.2);
+        background-color: $purple;
+        color: $white;
+    }
+}

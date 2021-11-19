@@ -1,0 +1,85 @@
+@import '../../styles/main.scss';
+
+.about {
+    padding: 120px 0;
+    background-color: $background;
+
+    @media screen and (max-width: 480px){
+        padding: 60px 0; 
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 769px){
+           justify-content: center;
+        }  
+
+        @media screen and (max-width: 480px){
+           justify-content: center;
+        }  
+    }
+
+    &__text {
+        width: 633px;
+        color: $grey;
+        font-family: $ptsans;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+
+        @media screen and (max-width: 769px){
+            text-align: center;
+        }  
+
+        @media screen and (max-width: 480px){
+            width: 233px;
+            text-align: center;
+        }       
+
+        &_paragraph {
+            margin-bottom: 35px;
+
+            @media screen and (max-width: 769px){
+                margin-top: 35px;
+            }
+
+            @media screen and (max-width: 480px){
+                margin-top: 35px;
+            }
+        }
+
+        &_paragraph2 {
+            margin-bottom: 95px;
+
+            @media screen and (max-width: 769px){
+                margin-bottom: 35px;
+            } 
+
+
+            @media screen and (max-width: 480px){
+                margin-bottom: 35px;
+            }  
+        }
+    }
+
+    &__title-column {
+        background-image: url('../../images/about-img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        padding: 70px 100px 355px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        @media screen and (max-width: 480px){
+           padding: 70px 60px 255px;
+        }     
+    }
+}

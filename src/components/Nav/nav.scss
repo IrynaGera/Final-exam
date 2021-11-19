@@ -1,0 +1,59 @@
+@import '../../styles/main.scss';
+
+.nav {
+  display: flex;
+
+  @media screen and (max-width: 480px) {
+    background-color: $purple;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+    justify-content: flex-end;    
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      margin-left: 30px;
+      color: $white;
+      font-family: $proximanova;
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 798px)  {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__link {
+
+    &.active {
+      text-decoration: underline;
+    } 
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  .burger{
+    display: block;
+    padding-top: 10px;
+    margin-left: 10px;
+    z-index: 10;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .close {
+    display: none;
+  }       
+}

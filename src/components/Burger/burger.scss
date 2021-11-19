@@ -1,0 +1,46 @@
+@import '../../styles/main.scss';
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 25px;
+
+    @media screen and (max-width: 480px) {
+        display: block;
+    } 
+
+    span,
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        border-radius: 4px;
+        background-color: $white;
+        transition: all ease-in-out 0.3s;
+    }
+
+    span {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &::after {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }    
+}

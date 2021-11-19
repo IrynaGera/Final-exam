@@ -1,0 +1,44 @@
+@import '../../styles/main.scss';
+
+.home {
+    background-image: url(../../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 330px 0 500px;
+
+    @media screen and (max-width: 480px){
+        padding: 160px 0 250px;
+    }
+
+    &__title {
+        font-family: $proximanova;
+        font-size: 72px;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: $light-white;
+
+        @media screen and (max-width: 480px){
+            font-size: 52px;
+        }
+    }
+
+    &__subtitle {
+        width: 650px;
+        color: $light-white;
+        font-family: $ptsans;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: normal;
+        margin: 0 auto;
+        text-align: center;
+
+        @media screen and (max-width: 480px){
+            width: 280px;
+        }
+    }
+}

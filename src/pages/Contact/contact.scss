@@ -1,0 +1,95 @@
+@import '../../styles/main.scss';
+
+.contacts {
+    max-height: 100vh;
+
+    &__title {
+        position: absolute;
+        top: 170px;
+        left:880px;
+
+        @media screen and (max-width: 769px){
+            left: 270px;
+        }
+
+        @media screen and (max-width: 480px){
+            left: 70px;
+        }
+    }
+
+    &__address-holder {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        transform: translate(0px, -700px);
+
+        @media screen and (max-width: 480px){
+            transform: translate(0px, -400px);
+        }
+    }
+
+    &__wrapper-logo {
+        padding: 33px 0;
+        background-color: $purple;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 480px){
+            padding: 15px 0;
+            width: 50px;
+        }
+    }
+
+    &__info {
+        width: 260px;
+        color: $grey;
+        font-family: $ptsans;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        background-color: $light-purple;
+        padding: 17px 40px;
+        text-align: center;
+        align-items: center;
+
+        &_phone {
+            padding-top: 35px;
+        }    
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        transition: all 0.5s ease-out;
+    }
+
+    .contacts__info{
+        display: none;   
+    }
+
+    .contacts__wrapper:hover .contacts__info {
+        display: block;
+        transition: all 0.5s ease-out;
+    }
+
+    &__top-holder {
+        max-width: 80px;
+        background-color: $purple;
+        justify-content: center;
+        display: flex;
+        padding: 15px 0;
+        transform: translate(1800px, -600px);
+
+        @media screen and (max-width: 769px){
+            transform: translate(650px, -600px);
+        }
+
+        @media screen and (max-width: 480px){
+            transform: translate(250px, -420px);
+            max-width: 50px;
+            padding: 5px 0;
+        }
+    }
+}

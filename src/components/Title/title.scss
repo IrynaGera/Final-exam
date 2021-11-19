@@ -1,0 +1,24 @@
+@import '../../styles/main.scss';
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__holder {
+        margin-bottom: 40px;
+    }
+
+    &__name {
+        font-family: $proximanova;
+        font-size: 36px;
+        font-weight: 700;
+        font-style: normal; 
+        text-transform: uppercase;
+        color: $light-white;
+
+        @media screen and (max-width: 480px){
+            font-size: 26px;
+        } 
+    }
+}
